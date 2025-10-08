@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curupira: o Guardião da Floresta Sangrenta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Eater&family=Nosifer&family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- Font awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style type="text/css">
+        body {cursor: url(http://www.rw-designer.com/cursor-extern.php?id=83262);}
+        </style>
+</head>
+<body class="dark-theme">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <h1 class="loading-title">Curupira</h1>
+        <div class="skull-loader">
+            <i class="fas fa-skull fa-4x"></i>
+        </div>
+        <p class="loading-subtitle">O Guardião da Floresta Sangrenta</p>
+    </div>
+
+    <!-- Cursor elements -->
+    <div id="custom-cursor"></div>
+    <div id="cursor-trail"></div>
+
+    <!-- Sound controls -->
+ 
+    <!-- Theme switcher -->
+
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="nav-backdrop"></div>
+        <div class="logo-container">
+            <div class="logo">C</div>
+        </div>
+        <ul>
+            <li><a href="#hero" data-sound="hover">Início</a></li>
+            <li><a href="#about" data-sound="hover">Sobre</a></li>
+            <li><a href="#gallery" data-sound="hover">Galeria</a></li>
+            <li><a href="#download" data-sound="hover">Download</a></li>
+            <li><a href="#contact" data-sound="hover">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section id="hero" class="section">
+        <div class="video-overlay"></div>
+        <div class="video-container">
+            <video autoplay muted loop id="forest-video">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-gloomy-forest-path-in-the-morning-42613-large.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-content">
+            <h1 class="main-title">
+                <span class="title-word">Curupira</span>
+            </h1>
+            <div class="fire-container">
+                <div class="flames-wrapper">
+                    <div class="flames">
+                        <div class="flame"></div>
+                        <div class="flame"></div>
+                        <div class="flame"></div>
+                        <div class="flame"></div>
+                    </div>
+                    <div class="embers"></div>
+                </div>
+            </div>
+            <p class="subtitle">o Guardião da Floresta Sangrenta</p>
+            <div class="hero-buttons">
+                <a href="#download" class="cta-button pulse" data-sound="click">SOBREVIVA SE PUDER</a>
+                <button id="summon-button" class="horror-button" data-sound="click">
+                    <i class="fas fa-skull"></i>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Role para baixo... se tiver coragem</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-overlay"></div>
+        <div class="section-content">
+            <h2 class="section-title">A Lenda Ganha Vida</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="https://www.infoescola.com/wp-content/uploads/2008/10/curupira-232665617.jpg" alt="Curupira">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="typewriter-container">
+                        <p id="typewriter" class="synopsis">
+                            Os pés virados para trás. Os olhos vermelhos como sangue. Os dentes afiados como facas.
+                            O Curupira não é apenas uma lenda... Ele é o juiz, o carrasco e o guardião da floresta.
+                        </p>
+                    </div>
+                    <p class="game-description">
+                        <span class="blood-drop">V</span>ocê é um explorador perdido na floresta amazônica mais densa e isolada. 
+                        O que começou como uma expedição científica se transformou em um pesadelo quando seu guia 
+                        desapareceu misteriosamente. Agora, sozinho entre as árvores centenárias, você percebe que 
+                        não está só. <span class="highlight">Algo te observa</span>. Algo te <span class="highlight">caça</span>.
+                    </p>
+                    <p class="game-description">
+                        Com recursos limitados e apenas sua astúcia para sobreviver, você terá que encontrar o caminho 
+                        para fora enquanto desvenda os segredos sangrentos da floresta. Mas cuidado: <span class="danger-text">cada árvore derrubada, 
+                        cada animal ferido, desperta ainda mais a ira do guardião ancestral</span>.
+                    </p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-skull"></i>
+                            <h3>Terror Psicológico</h3>
+                            <p>Sua sanidade diminui a cada encontro com o sobrenatural</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-tree"></i>
+                            <h3>Floresta Viva</h3>
+                            <p>O ambiente reage às suas ações e decisões</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-ghost"></i>
+                            <h3>Mitologia Brasileira</h3>
+                            <p>Enfrente criaturas lendárias em sua forma mais aterrorizante</p>
+                        </div>
+                    </div>
+                    <div class="hidden-message" data-trigger="hidden">
+                    Ele já sabe que você está aqui. Ele observa...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="section-overlay gallery-overlay"></div>
+        <div class="section-content">
+            <h2 class="section-title">Vislumbres do Horror</h2>
+            
+            <div class="gallery-tabs">
+                <button class="tab-button active" data-tab="images">Imagens</button>
+                <button class="tab-button" data-tab="videos">Vídeos</button>
+            </div>
+            
+            <div class="tab-content" id="images-content">
+                <div class="gallery-container">
+                    <div class="gallery-slider">
+                        <div class="gallery-slide">
+                            <div class="gallery-image">
+                                <img src="https://i.pinimg.com/originals/17/28/45/172845935e891be32e2119ea0d6df8f5.jpg" alt="Floresta Sombria">
+                                <div class="image-caption">A floresta esconde seus segredos nas sombras</div>
+                            </div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1516822669470-73637e08216a" alt="Rastros de Sangue">
+                                <div class="image-caption">Rastros de sangue levam ao desconhecido</div>
+                            </div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1477768663691-75454fd8eff8" alt="Olhos na Escuridão">
+                                <div class="image-caption">Aqueles olhos... sempre observando</div>
+                            </div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-image">
+                                <img src="https://i.pinimg.com/originals/7a/4f/fd/7a4ffd51a6b5503e3490c570cdac61d5.jpg" alt="Pegadas Invertidas">
+                                <div class="image-caption">As pegadas invertidas são seu único rastro</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="gallery-nav prev" data-sound="click"><i class="fas fa-chevron-left"></i></button>
+                    <button class="gallery-nav next" data-sound="click"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            
+            <div class="tab-content hidden" id="videos-content">
+                <div class="video-wrapper">
+                    <iframe width="960" height="540" src="https://www.youtube.com/embed/jXYN_M2RDLQ?controls=0" 
+                        title="Curupira: o Guardião da Floresta Sangrenta (Trailer)" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="section">
+        <div class="section-overlay"></div>
+        <div class="section-content">
+            <h2 class="section-title">Encare Seu Destino</h2>
+            <div class="platforms-container">
+                <div class="platform">
+                    <i class="fab fa-steam"></i>
+                    <h3>Steam</h3>
+                    <button class="download-button steam" data-jumpscare="mild" data-sound="click">
+                        <span class="btn-text">Download</span>
+                        <span class="btn-price">R$ 59,90</span>
+                    </button>
+                </div>
+                <div class="platform">
+                    <i class="fab fa-playstation"></i>
+                    <h3>PlayStation 5</h3>
+                    <button class="download-button psn" data-jumpscare="mild" data-sound="click">
+                        <span class="btn-text">Pré-Venda</span>
+                        <span class="btn-price">R$ 199,90</span>
+                    </button>
+                </div>
+                <div class="platform">
+                    <i class="fab fa-xbox"></i>
+                    <h3>Xbox Series X|S</h3>
+                    <button class="download-button xbox" data-jumpscare="wild" data-sound="click">
+                        <span class="btn-text">Comprar</span>
+                        <span class="btn-price">R$ 199,90</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="requirements">
+                <div class="req-column">
+                    <h3>Requisitos Mínimos</h3>
+                    <ul>
+                        <li><strong>SO:</strong> Windows 10 64-bit</li>
+                        <li><strong>Processador:</strong> Intel i5-6600k / AMD Ryzen 5 1600</li>
+                        <li><strong>Memória:</strong> 8 GB RAM</li>
+                        <li><strong>Placa de vídeo:</strong> NVIDIA GTX 1060 / AMD RX 580</li>
+                        <li><strong>Armazenamento:</strong> 45 GB</li>
+                        <li><strong>Notas adicionais:</strong> Não recomendado para cardíacos</li>
+                    </ul>
+                </div>
+                <div class="req-column">
+                    <h3>Requisitos Recomendados</h3>
+                    <ul>
+                        <li><strong>SO:</strong> Windows 10/11 64-bit</li>
+                        <li><strong>Processador:</strong> Intel i7-8700k / AMD Ryzen 7 3700X</li>
+                        <li><strong>Memória:</strong> 16 GB RAM</li>
+                        <li><strong>Placa de vídeo:</strong> NVIDIA RTX 2070 / AMD RX 6700 XT</li>
+                        <li><strong>Armazenamento:</strong> 45 GB SSD</li>
+                        <li><strong>Notas adicionais:</strong> Fones de ouvido obrigatórios para experiência completa</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="warning-box">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>ATENÇÃO: Este jogo contém cenas de violência extrema, imagens perturbadoras e jumpscares intensos. 
+                Não é recomendado para pessoas sensíveis, com condições cardíacas ou epilepsia fotossensível.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-overlay contact-overlay"></div>
+        <div class="section-content">
+            <h2 class="section-title">entre em contato...</h2>
+            
+            <div class="contact-container">
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome..." required data-sound="hover">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="Seu e-mail..." required data-sound="hover">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem:</label>
+                            <textarea id="message" name="message" placeholder="Sua mensagem... Ele está lendo também." required data-sound="hover"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button" data-jumpscare="mild" data-sound="click">ENVIAR</button>
+                    </form>
+                    <div class="form-message hidden">
+                        <p>Sua alma foi registrada. O Curupira agradece e virá ao seu encontro em breve...</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" data-sound="hover">
+                            <i class="fab fa-facebook"></i>
+                            <span class="social-tooltip">Facebook</span>
+                        </a>
+                        <a href="#" class="social-icon" data-sound="hover">
+                            <i class="fab fa-twitter"></i>
+                            <span class="social-tooltip">Twitter</span>
+                        </a>
+                        <a href="#" class="social-icon" data-sound="hover">
+                            <i class="fab fa-instagram"></i>
+                            <span class="social-tooltip">Instagram</span>
+                        </a>
+                        <a href="#" class="social-icon" data-sound="hover">
+                            <i class="fab fa-discord"></i>
+                            <span class="social-tooltip">Discord</span>
+                        </a>
+                        <a href="#" class="social-icon easter-egg" data-sound="hover">
+                            <i class="fas fa-skull"></i>
+                            <span class="social-tooltip">???</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Curupira</h3>
+                <p>O Guardião da Floresta Sangrenta</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Jogo</h4>
+                    <ul>
+                        <li><a href="#about" data-sound="hover">Sobre</a></li>
+                        <li><a href="#gallery" data-sound="hover">Galeria</a></li>
+                        <li><a href="#download" data-sound="hover">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#" data-sound="hover">FAQ</a></li>
+                        <li><a href="#" data-sound="hover">Fórum</a></li>
+                        <li><a href="#contact" data-sound="hover">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#" data-sound="hover">Termos de Uso</a></li>
+                        <li><a href="#" data-sound="hover">Privacidade</a></li>
+                        <li><a href="#" data-sound="hover">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 BloodForest Studios. Todos os direitos reservados.</p>
+            <p class="hidden-message">Ele está sempre observando. Ele nunca esquece.</p>
+        </div>
+    </footer>
+
+    <!-- Jumpscare Container -->
+    <div id="jumpscare-container" class="hidden">
+        <img id="jumpscare-image" src="https://tinyurl.com/2p8s9a5z" alt="Jumpscare">
+    </div>
+
+    <!-- Curupira Summon Overlay -->
+    <div id="summon-overlay" class="hidden">
+        <div class="summon-content">
+            <img src="https://comicvine.gamespot.com/a/uploads/scale_medium/11/117763/3279195-sacizinho.jpg" alt="Curupira" class="summon-image">
+            <div class="summon-text">
+                <h2>Ele foi invocado...</h2>
+                <p>...e agora conhece seu rosto.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 404 Page (Hidden) -->
+    <div id="page-404" class="hidden">
+        <div class="error-content">
+            <h1>404</h1>
+            <h2>Você se perdeu na floresta...</h2>
+            <p>O caminho de volta não existe mais. Ele está atrás de você agora.</p>
+            <a href="#hero" class="horror-button">Voltar se ainda houver tempo</a>
+        </div>
+    </div>
+
+    <!-- Load JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
